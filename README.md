@@ -50,6 +50,11 @@ If you use this pre-trained weights of model, you can
 cd ./src
 python main.py --skip_training --RESUME=True --gpu_id=0
 ```
+To test on input and masks in a folder and get output images
+```bash
+cd ./src
+python main.py --skip_training --RESUME=True --gpu_id=0 --test --image ../examples/places2 --mask ../examples/places2_masks --output ../examples/places2_results
+```
 
 
 ## Some Details
